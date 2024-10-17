@@ -10,7 +10,12 @@ export class ServerApp {
         CronService.createJob(
             '*/5 * * * * *', // each five seconds
             () => {
-                new CheckService().execute('http://google.com');
+                const url = 'http://localhost:3000/posts';
+                // new CheckService().execute('http://google.com');
+                new CheckService(
+                    () => console.log(`Service ${url} is responding`),
+                    (error) => console.log(`Check failed: ${error}`),
+                ).execute(url);
             }
         )
     }

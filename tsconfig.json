@@ -1,4 +1,15 @@
 {
+  "exclude": [
+    "node_modules",
+    "dist",
+    "build",
+    "tests",
+    "**/__tests__/*",
+    "**/__mocks__/*"
+  ],
+  "include": [
+    "src"
+  ],
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig to read more about this file */
 

@@ -1,10 +1,11 @@
 
 export enum LogSeverityLevel {
-    ERROR = 'error',
-    WARNING = 'warning',
-    CRITICAL = 'critical',
-    INFO = 'info',
-    DEBUG = 'debug'
+    // ERROR = 'error',
+    // WARNING = 'warning',
+    // CRITICAL = 'critical',
+    // INFO = 'info',
+    // DEBUG = 'debug'
+    low = 'low', medium = 'medium', high = 'high'
 }
 
 export class LogEntity {

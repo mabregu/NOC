@@ -1,14 +1,13 @@
-import { ServerApp } from "./presentation/server";
+import { envs } from './config/plugins/envs.plugin';
+import { Server } from './presentation/server';
 
 
-(() => {
-    try {
-        main();
-    } catch (error) {
-        console.error("An error occurred while starting the server:", error);
-    }
+(async() => {
+  main();
 })();
 
-function main() {
-    ServerApp.start();
+
+function main(){
+  // Server.start();
+  // console.log( envs );
 }
